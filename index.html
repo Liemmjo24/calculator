@@ -7,28 +7,32 @@
 </head>
 <body>
     <div class="calculator">
-        <input type="text" id="display" readonly>
-        <br>
-        <button onclick="appendNumber(7)">7</button>
-        <button onclick="appendNumber(8)">8</button>
-        <button onclick="appendNumber(9)">9</button>
-        <button onclick="appendOperator('/')">/</button>
-        <br>
-        <button onclick="appendNumber(4)">4</button>
-        <button onclick="appendNumber(5)">5</button>
-        <button onclick="appendNumber(6)">6</button>
-        <button onclick="appendOperator('*')">*</button>
-        <br>
-        <button onclick="appendNumber(1)">1</button>
-        <button onclick="appendNumber(2)">2</button>
-        <button onclick="appendNumber(3)">3</button>
-        <button onclick="appendOperator('-')">-</button>
-        <br>
-        <button onclick="appendNumber(0)">0</button>
-        <button onclick="appendOperator('.')">.</button>
-        <button onclick="appendOperator('+')">+</button>
-        <br>
-        <button id="equals" onclick="calculateResult()">=</button>
+        <div class="calculator_display">0</div>
+        <div class="calculator_keys">
+            <br>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button data-action="divide">/</button>
+            <br>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button data-action="multiply">*</button>
+            <br>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button data-action="minus">-</button>
+            <br>
+            <button>0</button>
+            <button data-action="decimal">.</button>
+            <button data-action="add">+</button>
+            <button data-action="clear">AC</button>
+            <br>
+            <button data-action="calculate" class="calculator_keyWide">=</button>
+        </div>
+
     </div>
     <script src="calc.js"></script>
 </body>
